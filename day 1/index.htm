@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <script defer src="script.js"></script>
+
+    <link rel="stylesheet"  href="style.css">
+
+</head>
+
+
+<body>
+
+    <p id="demo"></p>
+
+    <div class="container">
+  
+    <h2 style="text-align: center;" id="topic">Create a new account!!</h2>
+   
+   <form action="/" method="POST" id="form">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Please enter your name"/>  
+    </div> 
+
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="pw" id="pw" placeholder="At least 6 characters"/>  
+    </div> 
+
+    <div>
+        <label for="number">Contact</label>
+        <input type="text" name="no" id="no" placeholder="Must be 10 digit"/>  
+    </div>  
+
+    <div>
+        <label>Zip Code</label>
+        <input type="text" name="zip" id="zip" placeholder="4 digit valid zip code"/>  
+    </div>  
+
+    <div>
+        <label id="c"> Country</label>
+       <select name="country" id="country">
+         <option  selected  value="-1"> -- SELECT --</option>
+         <option value="1">Nepal</option>
+         <option value="2">India</option>
+         <option value="3">China</option>
+         <option value="4">Japan</option>
+         <option value="5">USA</option>
+       </select>
+    </div>  
+
+    <button type="submit" id="submit"  onclick="script.js"> <a href="index.htm" style="text-decoration: none;">Submit</a>  </button>
+</div>
+   </form> 
+
+   <!-- <script type="text/javascript">
+    document.getElementById('name').focus();
+    </script> -->
+</body>
+</html>
