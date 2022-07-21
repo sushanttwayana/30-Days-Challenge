@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: Poppins;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #373737;
+}
+
+h3 {
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom:5px;
+    color:#f9f9f9;
+    margin-left:25px;
+}
+
+input {
+    width:300px;
+    background: #292929;
+    outline:none;
+    color:rgb(196, 184, 184);
+    padding:10px;
+    border:none;
+    border-radius:5px 
+}
+
+.box {
+    position:relative;
+}
+
+#submit{
+    margin-left:15px;
+    width:80px;
+    font-size: 15px;;
+    height:40px;
+    border-radius: 10px;
+    cursor:pointer;
+    margin-top:px;
+    position: absolute;
+}
+
+#submit:hover{
+    
+    border-radius: 20px;
+}
+
+#demo {
+    display: block;
+    color:#000;
+    font-weight: 300;
+    padding:7px;
+    font-size: 17px;
+}
+
+/* ::before selector inserts something before the content of each selected element */
+.invalid .box::before              
+ {   
+    content: '';
+    position: absolute;
+    background: url("invalid.webp");
+    width:24px;
+    height:24px;
+    top:8px;
+    right:10px;
+    background-size: cover;
+    z-index: 10;
+}
+
+.valid .box::before              
+ {   
+    content: '';
+    position: absolute;
+    background: url("valid.jpg");
+    width:24px;
+    height:24px;
+    top:8px;
+    right:10px;
+    background-size: cover;
+    z-index: 10;
+}

@@ -13,15 +13,15 @@ form.addEventListener('submit', (e) => {
 
      e.preventDefault(); // form afai submit huna bata prevent garxa
 
-    // if (name.value === '' || name.value == null){
-    //     alert("Please provide your name!");
-    //     document.getElementById('name').focus();
-    // }
+    if (name.value === '' || name.value == null){
+        alert("Please provide your name!");
+        document.getElementById('name').focus();
+    }
 
-    // if (password.value.length <= 6){
-    //     alert("Password must be longer than 6 characters");
-    //     document.getElementById('pw').focus();
-    // }
+    if (password.value.length <= 6){
+        alert("Password must be longer than 6 characters");
+        document.getElementById('pw').focus();
+    }
 
   
 
