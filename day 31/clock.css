@@ -1,0 +1,77 @@
+body{
+    display: grid;
+    place-content: center;
+    height:100vh;
+    background-color: #dde1dde7;
+}
+
+.container {
+    height: 200px;
+    width: 200px;
+    /* border: 1px solid black; */
+    box-shadow: inset -7px -3px 10px #ffffff,
+    inset 10px 3px 10px rgba(94, 104, 121, 0.288);
+}
+
+
+.clock::after {
+    position: absolute;
+    content : " ";
+    left : 10%;
+    top: 10%;
+    height :80%;
+    width :80%;
+    background-color: transparent;
+    box-shadow : inset -5px -3pz 10px #ffffff,
+    inset 10px 3px 10px rgba(94,104,121,0.28);
+    border-radius : 50%;
+}
+
+.clock {
+    height: 90%;
+    width : 90%;
+    background-color: #dde1dde7;
+    border-radius:50%;
+    position: relative;
+    left :10px;
+    top: 10px;
+    border : 1px solid rgba(183, 178, 178, 0.288);
+    box-shadow : -10px -5px  10px #d1cccce5, 10px 5px 15px rgba(94, 104, 121, 0.288);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hours{
+    position: absolute;
+    height:100%;
+    font-weight: bold;
+    font-size:18px;
+    
+}
+
+.arms {
+    background-color: rgb(41, 33, 33);
+    transform-origin: bottom;
+    /* transform origin is the point around which a transformation is applied */
+    /* position: absolute; */
+    width:6px;
+    height: 50%;
+    top: 50px;
+    border-radius: 20px;
+    box-shadow :3px 5px 7px  rgba(145, 143, 143); 
+}
+
+.hourarm {
+    height:20%;
+    top: 50px;
+    
+}
+
+.secarm {
+    height: 37%;
+    top:30px;
+   
+}
