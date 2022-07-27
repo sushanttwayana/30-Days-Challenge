@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    max-width: 1170px;
+    letter-spacing: 1.5px;
+    color:#102a42;
+    background: #f1f5f8;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 0.85rem;
+}
+
+@media screen and (min-width: 800px) {
+    h1{
+        font-size:4rem;
+    }
+    h2{
+        font-size:2.5rem;
+    }
+    h3{
+        font-size:1.75rem;
+    }
+    h4{
+        font-size:1rem;
+    }
+
+    h1,h2, h3, h4 {
+      line-height: 1;
+    }
+}
+
+main {
+    min-height:100vh;
+    display: grid;
+    place-items: center;
+}
+
+nav {
+    background: #fff;
+    display: grid;
+    align-items: center;
+    height: 5rem;
+    margin-top: px;
+    width: 100vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-center {
+    /* border: 2px solid; */
+    display: flex;
+    width:85vw;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-center h4 {
+    color: #49a6e9;
+    margin-bottom: 0;
+}
+
+.nav-links a {
+    font-weight: 700;
+    color : #2b84c4;
+    margin-right: 3rem;
+    letter-spacing: 1.5px;
+}
+
+.nav-links a:hover {
+    color:#102a42;
+}
+
+main {
+ margin-left:250px;
+ margin-top:-50px
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .container h2 {
+    background: rgb(15, 12, 12);
+    color: whitesmoke;
+    padding:17px;
+    margin-bottom:35px;
+    border-radius: 5px;
+  }
+
+  .color {
+    color :#2b84c4;
+  }
+
+  .btn-hero {
+    padding: 12px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2.5px solid black;
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+  }
+
+  .btn-hero:hover {
+    color:rgb(238, 232, 232);
+    background: rgb(8, 6, 6);
+  }
