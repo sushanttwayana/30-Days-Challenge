@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    padding :0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    max-width: 1170px;
+    letter-spacing: 1.5px;
+    color:#102a42;
+    background: #f1f5f8;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+section {
+    padding: rem 0;
+    width: 100vw;
+}
+
+.section-center {
+    /* border: 1px solid blue; */
+    width:80vw;
+    max-width: 1170px;
+    margin:0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    /* border: 2px solid; */
+    padding: 2rem 2rem;
+    /* text-align: center; */
+}
+
+.title {
+    margin-top: 7vh;
+    margin-bottom: 5rem;
+}
+
+.title h2{
+    font-family: "Great Vibes", cursive;
+    color :#c59d5f;
+    text-align: center;
+    font-size:45px;
+}
+
+.question {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.2rem 1.5rem 0.5rem 1.2rem;
+    margin-bottom:60px;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.3);
+    width:650px;
+    display: grid;
+    margin-top: -30px;
+}
+
+.question:hover{
+    box-shadow: 2px 2px 5px #102a42;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:1rem;
+}
+
+.question-title p{
+    letter-spacing:3px;
+    color:rgb(94, 89, 89);
+}
+
+.btns{
+    font-size:1.6rem;
+    background: transparent;
+    border:transparent;
+    color:rgb(177, 177, 39);
+    transition: 0.5s linear;
+    cursor:pointer;
+}
+
+.btns:hover {
+    transform: rotate(90deg);
+}
+
+.question-text{
+    padding: 1rem 0 1.5rem 0;
+    border-top : 1px solid rgba(0,0 ,0 ,0.3);
+    color: #53718d;
+    font-family:"Open Sans", sans-serif;
+    font-size:0.95rem;
+}
+
+.question-text p{
+    margin-bottom: 0;
+}
+
+/* hide text */
+
+.question-text{
+    display: none;
+}
+
+.show-text .question-text {
+    display: block;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.show-text .minus-icon{
+    display: inline;
+}
+
+.show-text .plus-icon{
+    display: none;
+}
+
