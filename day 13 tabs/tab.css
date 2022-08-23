@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    line-height:1.4;
+    font-family: Poppins;
+    background: #edf0f3;
+    color: #102a42;
+}
+
+ul{
+    list-style-type: none;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+p{
+    margin-bottom: 30px;
+    color:#617d98;
+}
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom:30px;
+    margin-top:-10px;
+}
+
+.title h2{
+    font-size:3rem;
+    font-weight: 500;
+}
+
+.title p{
+    width:80%;
+    margin:0 auto;
+}
+
+.about-img img{
+    margin-bottom: 1.5rem;
+    height: 21rem;
+    width:35rem;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 992px) {
+    .about-img {
+        margin-bottom: 0;
+      }
+
+      .center{
+       
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+          
+      }
+}
+
+/* .center{
+    display: flex;
+} */
+
+.about{
+    background: white;
+    border-radius: 8px;
+    display:grid;
+    grid-template-rows:auto 1fr;
+}
+
+.btn-container{
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* 1fr 1fr 1fr */
+}
+
+.btn:nth-child(1){
+    border-top-left-radius: 8px;
+}
+
+.btn:nth-child(3){
+    border-top-right-radius: 8px;
+}
+
+.btn{
+    padding: 15px 0;
+    border:none;
+    background: #dae2ec;
+    letter-spacing: 0.3rem;
+    font-family: roboto;
+    font-size: 20px;
+    transition: 0.5s linear;
+    display: block;
+    cursor: pointer;
+}
+  
+.btn:hover:not(.active) {
+    background: #ebf7ff;
+    color:#1b63a7;
+}
+
+.btn.active{
+    background:white;
+}
+
+.about-content{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 2rem 1.5rem;
+}
+
+/* hide content */
+.content{
+    display: none;
+}
+
+.content.active{
+    display: block;
+}
+
+.content h4{
+    padding:20px 0;
+    margin-top: -25px;
+    font-family: roboto;
+    font-size: 22px;
+}
