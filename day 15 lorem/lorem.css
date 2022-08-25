@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    background:  #edf0f3;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    color:#063251;
+}
+
+h1,
+h2,
+h3,
+h4{
+    letter-spacing: 3px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    font-family: roboto;
+}
+
+h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+
+  p {
+    margin-bottom: 1.25rem;
+    color: #497197;
+  }
+
+  .btn {
+    color: #063251;
+    background: #65b2e9;
+    border: none;
+    border-radius: 8px;
+    padding: 0.475rem 0.75rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.5s linear;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  .btn:hover {
+    background: rgb(165, 213, 248);
+    border-color: rgb(165, 213, 248);
+  }
+
+  .section-center {
+    width: 90vw;
+    /* border: 1px solid; */
+    margin: 0 auto;
+    max-width:42rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .section-center h3{
+    font-size:1.8rem;
+    text-transform: uppercase;
+  }
+
+  .lorem-form {
+    letter-spacing: 2.5px;
+    margin-top:35px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label{
+    font-size: 1.25rem;
+  }
+
+  input {
+    padding:5px ;
+    width:4rem;
+    font-size: 1.3rem;
+    border:none;
+    margin: 0 1.2rem;
+    border-radius: 7px;
+  }
+
+  .result {
+    margin-bottom: 2rem;
+  }
+  

@@ -27,17 +27,17 @@ const months = [
   const items = document.querySelectorAll(".deadline-format h4");
 //   console.log(items)
 
-let tempDate = new Date();
-let tempYear = tempDate.getFullYear();
-let tempMonth = tempDate.getMonth();
-let tempDay =  tempDate.getDate();
+// let tempDate = new Date();
+// let tempYear = tempDate.getFullYear();
+// let tempMonth = tempDate.getMonth();
+// let tempDay =  tempDate.getDate();
 
-// let futureDate = new Date(2022,8, 10, 23, 59, 0);
+let futureDate = new Date(2022,7, 24, 22, 31, 0);
 // months are 0th index instead of 1 i.e december is 11 starting from jan [0]
 // console.log(futureDate);
 
 // every 10 days ma afai update hune..
-const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 23, 59, 0);
+// const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 23, 59, 0);
 
 const year = futureDate.getFullYear();
 const hour =  futureDate.getHours();
