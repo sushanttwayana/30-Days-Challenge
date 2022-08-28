@@ -50,7 +50,7 @@ h4{
     background: #add4f0;
     display: grid;
     place-items: center;
-    transition: all 0.25s ease-in-out;
+    transition: all 1s ease-in-out;
     text-align: center;
 }
 
@@ -99,20 +99,24 @@ h4{
 
 .prev-btn,
 .next-btn {
-  background: transparent;
-  border-color: transparent;
+  background: hsl(209, 28%, 39%);
+  border-color: hsl(209, 28%, 39%);
+  padding: 5px 15px;
+  color:#bcccdc;
   font-size: 2rem;
   cursor: pointer;
-  margin: 0.75rem .25rem;
+  margin: 2rem .5rem;
   text-transform: capitalize;
   letter-spacing: 2px;
-  transition: all 0.3s linear;
+  transition: all 0.75s linear;
+  border-radius: 5px;
   
 }
 
 .prev-btn:hover,
 .next-btn:hover{
     color:#324d67;
+    background: #bcccdc;
 }
 
 @media screen and (min-width: 576px) {
